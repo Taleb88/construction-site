@@ -1,0 +1,104 @@
+body {
+  background-image: url("https://edgeinformation.com/wp-content/uploads/2018/11/Edge-August-B2-1024x739.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 320px) {
+  body {
+    height: 100vh;
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .welcome {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .welcome__message {
+    color: orange;
+    -webkit-animation-name: greeting;
+            animation-name: greeting;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    display: inline;
+  }
+}
+
+@media (min-width: 320px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar__link {
+    text-decoration: none;
+    position: relative;
+    -webkit-animation-name: link;
+            animation-name: link;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    font-size: 1.5rem;
+    color: orange;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@-webkit-keyframes greeting {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    background-color: black;
+  }
+}
+
+@keyframes greeting {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes link {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 1rem;
+    color: black;
+  }
+}
+
+@keyframes link {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 1rem;
+    color: black;
+  }
+}
+/*# sourceMappingURL=main.css.map */

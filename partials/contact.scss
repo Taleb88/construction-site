@@ -1,0 +1,175 @@
+@import './allUtils';
+
+body {
+    background-image: url('https://cdn2.hubspot.net/hub/464374/file-2219867856-jpg/blog-files/q1-srconstruction-cover-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1 {
+        text-align: center;
+        color: $black;
+        animation-name: title;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        border-radius: 0.5rem;
+    }
+
+    .form {
+        display: inline-block;
+        
+        @include mobile {
+            input {
+                text-align: center;
+                border: 0.1rem solid $black;
+                border-radius: 0.2rem;
+                height: 5vh;
+                width: 60vw;
+                animation-name: input;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+    
+            &__firstname, 
+            &__lastname, 
+            &__email {
+                margin-bottom: 0.1rem;
+            }
+    
+            textarea {
+                height: 25vh;
+                width: 60vw;
+                resize: none;
+                border: 0.1rem solid $black;
+                border-radius: 0.2rem;
+                animation-name: textarea;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            button {
+                background-color: $black;
+                color: $orange;
+                font-weight: bold;
+                border: 0.1rem solid $orange;
+                border-radius: 0.2rem;
+                height: 6vh;
+                width: 25vw;
+                animation-name: button;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        @include tablet {
+            input {
+                width: 30vw;
+            }
+
+            textarea {
+                width: 30vw;
+            }
+
+            button {
+                width: 13vw;
+            }
+        }
+
+        @include desktop {
+            button {
+                width: 10vw;
+            }
+
+            button:hover {
+                color: $black;
+                background-color: $orange;
+                border: 0.1rem solid $black;
+            }
+        }
+    }
+
+    #success {
+
+        @include mobile {
+            background-color: $orange;
+            width: 50vw;
+            margin-top: 1rem;
+            margin-left: 4.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        @include tablet {
+            margin-left: 11.5rem;
+        }
+
+        @include desktop {
+            margin-left: 19.2rem;
+        }
+    }
+
+    .navbar {
+        @include mobile {
+            display: flex;
+            justify-content: space-evenly;
+            
+            &__link {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                background-color: $black;
+                font-size: 1.5rem;
+            }
+
+            &__link:hover {
+                color: $orange;
+            }
+        }
+
+        @include tablet {
+            &__link:hover {
+                color: $orange;
+            }
+        }
+
+        @include desktop {
+            &__link:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+@keyframes title {
+    from {
+        top: 0rem;
+    } 
+    to {
+        top: 5rem;
+        color: white;
+    }
+}
+
+@keyframes input {
+    from {
+        top: 0rem;
+    }
+    to {
+        top: 5rem;
+        background-color: $orange;
+    }
+}
+
+@keyframes textarea {
+    from {
+        top: 0rem;
+    }
+    to {
+        top: 5rem;
+        background-color: $orange
+    }
+}

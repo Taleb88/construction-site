@@ -1,0 +1,213 @@
+body {
+  background-image: url("https://cdn2.hubspot.net/hub/464374/file-2219867856-jpg/blog-files/q1-srconstruction-cover-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+  text-align: center;
+  color: black;
+  -webkit-animation-name: title;
+          animation-name: title;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  border-radius: 0.5rem;
+}
+
+body .form {
+  display: inline-block;
+}
+
+@media (min-width: 320px) {
+  body .form input {
+    text-align: center;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    height: 5vh;
+    width: 60vw;
+    -webkit-animation-name: input;
+            animation-name: input;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  body .form__firstname, body .form__lastname, body .form__email {
+    margin-bottom: 0.1rem;
+  }
+  body .form textarea {
+    height: 25vh;
+    width: 60vw;
+    resize: none;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    -webkit-animation-name: textarea;
+            animation-name: textarea;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body .form button {
+    background-color: black;
+    color: orange;
+    font-weight: bold;
+    border: 0.1rem solid orange;
+    border-radius: 0.2rem;
+    height: 6vh;
+    width: 25vw;
+    -webkit-animation-name: button;
+            animation-name: button;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+@media (min-width: 768px) {
+  body .form input {
+    width: 30vw;
+  }
+  body .form textarea {
+    width: 30vw;
+  }
+  body .form button {
+    width: 13vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .form button {
+    width: 10vw;
+  }
+  body .form button:hover {
+    color: black;
+    background-color: orange;
+    border: 0.1rem solid black;
+  }
+}
+
+@media (min-width: 320px) {
+  body #success {
+    background-color: orange;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  body #success {
+    margin-left: 11.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body #success {
+    margin-left: 19.2rem;
+  }
+}
+
+@media (min-width: 320px) {
+  body .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .navbar__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    font-size: 1.5rem;
+  }
+  body .navbar__link:hover {
+    color: orange;
+  }
+}
+
+@media (min-width: 768px) {
+  body .navbar__link:hover {
+    color: orange;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .navbar__link:hover {
+    color: orange;
+  }
+}
+
+@-webkit-keyframes title {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    color: white;
+  }
+}
+
+@keyframes title {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    color: white;
+  }
+}
+
+@-webkit-keyframes input {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    background-color: orange;
+  }
+}
+
+@keyframes input {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    background-color: orange;
+  }
+}
+
+@-webkit-keyframes textarea {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    background-color: orange;
+  }
+}
+
+@keyframes textarea {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 5rem;
+    background-color: orange;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

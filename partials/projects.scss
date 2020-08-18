@@ -1,0 +1,145 @@
+@import 'allUtils';
+
+body {
+    background-image: url('https://ak.picdn.net/shutterstock/videos/423202/thumb/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    h1 {
+        color: black;
+        animation-name: title;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @include tablet {
+        height: 150vh;
+    }
+
+    @include desktop {
+        height: 200vh;
+    }
+
+    #slideshow {
+        overflow: hidden;
+    }
+
+    #slideshow .images img{
+        
+        @include mobile {
+            width: 20%;
+            float: left;
+        }
+
+        @include tablet {
+            height: 100%;
+        }
+    }
+
+    #slideshow .images {
+
+        @include mobile {
+            position: relative;
+            width: 500%;
+            left: 0;
+            text-align: center;
+            font-size: 0;
+            animation: 20s slide infinite;
+            
+        }
+
+        @include tablet {
+            height: 75vh;
+        }
+
+        @include desktop {
+            height: 75vh;
+        }
+    }
+
+    
+    .navbar {
+        
+        @include mobile {
+            display: flex;
+            justify-content: space-evenly;
+            
+            &__link {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                background-color: $black;
+                font-size: 1.5rem;
+            }
+
+            &__link:hover {
+                color: $orange;
+            }
+        }
+
+        @include tablet {
+            &__link:hover {
+                color: $orange;
+            }
+        }
+
+        @include desktop {
+            &__link:hover {
+                color: $orange;
+            }
+        }
+    }    
+}
+
+@keyframes title {
+    from {
+        top: 0rem;
+    } 
+    to {
+        top: 5rem;
+        color: white;
+    }
+}
+
+@keyframes slide {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+@keyframes link {
+    from {
+        top: 0rem;
+    }
+    to {
+        top: 1rem;
+        color: $black;
+    }
+}
